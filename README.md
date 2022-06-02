@@ -14,11 +14,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -39,32 +34,36 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Project Guide
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Weyland-Yutani
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This web app is a website and directory for the fictional Weyland-Yutani Corporation (FAIR USE ACT TO USE) from the Aliens franchise (it's also in Avatar) and its fictional Mars settlement colony. Of course things aren't exactly going as planned, but all settlers sign a waiver and Mars is the anarcho-capitalist dream. The app is from the point of view of a high ranking office/exec of the Mars colony
 
-### Code Splitting
+### Data Set
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The app uses a hardcoded data set the includes multiple arrays with their elements being objects. These arrays will be passed through props to display them on the app. The data sets are: Files, Important, Messages, Logs
 
-### Analyzing the Bundle Size
+### Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The App will include multiple components:
 
-### Making a Progressive Web App
+#### Welcome Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This component is the home page for the employee. It displays a greeting and the most important information (news, bulletins, etc) on it, as well as links to other components in the app
 
-### Advanced Configuration
+#### Files and File
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This contains important reports, each is a file. Employee can create, read, update, and delete files.
 
-### Deployment
+#### Messages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This contains messages to the employee from other employees. The employee can also send messages. (This messaging system is just fake though, pulled and pushed to the data set).
 
-### `npm run build` fails to minify
+#### Important
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This component contains information deemed important. News, PSA's, etc.
+
+#### Logs
+
+This component contains logs recorded by the employee. The employee can create new logs, edit logs, and delete logs too.
