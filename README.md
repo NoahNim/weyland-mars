@@ -46,6 +46,13 @@ The app uses a hardcoded data set the includes multiple arrays with their elemen
 
 #### Files
 
+Will have key value pairs:
+date: time
+creator: userId
+fileName: text
+subFolders: array of objects [{ date: time, creator: userId, fileName: text, content: text }]
+content: text
+
 #### Important
 
 Will have key value pairs of:
