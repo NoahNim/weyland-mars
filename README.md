@@ -57,7 +57,7 @@ Will have key value pairs:
 date: time
 creator: userId
 fileName: text
-subFolders: array of objects [{ date: time, creator: userId, fileName: text, content: text }]
+subFolders: array of objects [{ date: time, creator: userId, fileName: text, subfolders: (same as this but can be any name for object name) content: text }]
 content: text
 
 #### Important
