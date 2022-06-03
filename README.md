@@ -42,7 +42,13 @@ This web app is a website and directory for the fictional Weyland-Yutani Corpora
 
 ### Data Set
 
-The app uses a hardcoded data set the includes multiple arrays with their elements being objects. These arrays will be passed through props to display them on the app. The data sets are: Files, Important, Messages, Logs
+The app uses a hardcoded data set the includes multiple arrays with their elements being objects. These arrays will be passed through props to display them on the app. The data sets are: Users, Files, Important, Messages, Logs
+
+#### Users
+
+Will have key value pairs:
+name: text
+password text
 
 #### Files
 
@@ -82,6 +88,10 @@ log: text
 ### Components
 
 The App will include multiple components:
+
+#### Login
+
+This is a login page. There's only one user though.
 
 #### Welcome Page
 
