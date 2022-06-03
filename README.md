@@ -47,6 +47,7 @@ The app uses a hardcoded data set the includes multiple arrays with their elemen
 #### Users
 
 Will have key value pairs:
+id: integer
 name: text
 password text
 
