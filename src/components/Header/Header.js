@@ -7,7 +7,7 @@ const Header = (props) => {
       alignItems="center"
       area={"header"}
       w="100%"
-      color={props.color === "light" ? "black" : "white"}
+      color={props.colorMode === "light" ? "black" : "white"}
     >
       <Center>
         <ToggleColor
