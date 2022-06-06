@@ -38,20 +38,11 @@ const Information = (props) => {
     </Center>
   ));
 
-  const filterInfo = (info) => {
-    if (info === "news") {
-      return theNews;
-    } else if (info === "bulletins") {
-      return theBulletin;
-    }
-  };
-
   return (
     <Box>
       <Center>
-        {filterInfo("news")}
-        <Divider orientation="vertical" />
-        {filterInfo("bulletins")}
+        {daysNews ? theNews : ""}
+        {daysBulletins ? theBulletin : ""}
       </Center>
     </Box>
   );
