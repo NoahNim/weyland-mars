@@ -11,7 +11,10 @@ function App() {
   return (
     <Box>
       <Routes>
-        <Route path="/" element={<Login user={users} />} />
+        <Route
+          path="/"
+          element={<Login user={users} colorMode={colorMode} />}
+        />
         <Route
           path="welcome-page"
           element={

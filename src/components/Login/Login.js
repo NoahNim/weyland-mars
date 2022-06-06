@@ -15,7 +15,8 @@ const Login = (props) => {
       <Center>
         <Square
           size="200px"
-          bg="lightyellow"
+          bg={props.colorMode === "light" ? "lightyellow" : "rgb(124, 156, 55)"}
+          color={props.colorMode === "light" ? "black" : "white"}
           h="150px"
           w="200px"
           margin="200px"

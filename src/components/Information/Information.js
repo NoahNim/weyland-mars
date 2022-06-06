@@ -38,6 +38,10 @@ const Information = (props) => {
     </Center>
   ));
 
+  const todaysInfo = props.important.filter((infoType) =>
+    infoType.type === daysNews.type ? daysNews : daysBulletins
+  );
+
   return (
     <Box>
       <Center>

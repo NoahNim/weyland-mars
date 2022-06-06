@@ -12,7 +12,7 @@ const Welcome = (props) => {
         gridTemplateColumns={"150px 1fr"}
         h="939px"
         gap="1"
-        color={props.color === "light" ? "black" : "white"}
+        color={props.colorMode === "light" ? "black" : "white"}
         fontWeight="bold"
         max-width="1200px"
         margin="0 auto"
