@@ -1,22 +1,51 @@
-import styles from "./Login.module.css";
 import { Link } from "react-router-dom";
+import { UnlockIcon } from "@chakra-ui/icons";
+import {
+  List,
+  ListItem,
+  ListIcon,
+  Square,
+  Center,
+  Box,
+} from "@chakra-ui/react";
 
 const Login = (props) => {
   return (
-    <div className={`${styles["login-container"]}`}>
-      <div className={`${styles["login-form"]}`}>
-        {props.user.map((user) => (
-          <div key={user.id}>
-            <h2>Face Scan Complete.....</h2>
-            <h3>User Verified</h3>
-            <h4>Welcome {user.name}</h4>
-          </div>
-        ))}
-        <Link to="/welcome-page">
-          <button className={`${styles["login-button"]}`}>Login</button>
-        </Link>
-      </div>
-    </div>
+    <Box>
+      <Center>
+        <Square
+          size="200px"
+          bg="lightyellow"
+          h="150px"
+          w="200px"
+          margin="200px"
+          borderRadius="6px"
+        >
+          <List>
+            <Center>
+              {props.user.map((user) => (
+                <div key={user.id}>
+                  <ListItem>
+                    <h2>Face Scan Complete.....</h2>
+                  </ListItem>
+                  <ListIcon>
+                    <h3>User Verified</h3>
+                  </ListIcon>
+                  <ListItem>
+                    <h4>Welcome {user.name}</h4>
+                  </ListItem>
+                </div>
+              ))}
+            </Center>
+            <Center>
+              <Link to="/welcome-page">
+                <UnlockIcon></UnlockIcon>
+              </Link>
+            </Center>
+          </List>
+        </Square>
+      </Center>
+    </Box>
   );
 };
 
