@@ -1,4 +1,4 @@
-import { Center, Divider, Box } from "@chakra-ui/react";
+import { Center, Divider, Box, HStack } from "@chakra-ui/react";
 import { useState } from "react";
 import News from "./News";
 import Bulletin from "./Bulletin";
@@ -43,12 +43,16 @@ const Information = (props) => {
   );
 
   return (
-    <Box>
-      <Center>
-        {daysNews ? theNews : ""}
-        {daysBulletins ? theBulletin : ""}
-      </Center>
-    </Box>
+    <Center>
+      <HStack spacing="950px">
+        <Box bg={props.colorMode === "light" ? "white" : "black"}>
+          {theNews ? theNews : ""}
+        </Box>
+        <Box bg={props.colorMode === "light" ? "white" : "black"}>
+          {daysBulletins ? theBulletin : ""}
+        </Box>
+      </HStack>
+    </Center>
   );
 };
 
