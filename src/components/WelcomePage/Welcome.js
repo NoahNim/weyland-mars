@@ -1,5 +1,4 @@
 import { Grid, GridItem, Box } from "@chakra-ui/react";
-import ToggleColor from "../ToggleColorButton/ToggleColor";
 
 const Welcome = (props) => {
   return (
@@ -9,27 +8,30 @@ const Welcome = (props) => {
                   "nav main"`}
         gridTemplateRows={"50px 1fr 30px"}
         gridTemplateColumns={"150px 1fr"}
-        h="920px"
+        h="939px"
         gap="1"
-        color="black"
+        color={props.color === "light" ? "black" : "white"}
         fontWeight="bold"
-        alignItems="center"
+        max-width="1200px"
+        margin="0 auto"
+        w="99%"
       >
-        <GridItem pl="2" bg="black" area={"header"} w="99%">
-          <ToggleColor />
-        </GridItem>
         <GridItem
           pl="2"
           w="95%"
           h="100%"
-          bg="rgb(210, 219, 144)"
+          bg={
+            props.color === "light" ? "rgb(210, 219, 144)" : "rgb(124, 156, 55)"
+          }
           area={"nav"}
         />
         <GridItem
           pl="2"
           w="99%"
           h="100%"
-          bg="rgb(210, 219, 144)"
+          bg={
+            props.color === "light" ? "rgb(210, 219, 144)" : "rgb(124, 156, 55)"
+          }
           area={"main"}
         />
       </Grid>

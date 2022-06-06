@@ -1,14 +1,17 @@
-import { Button, useColorMode } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 
-function ToggleColor() {
-  const { colorMode, toggleColorMode } = useColorMode();
+const ToggleColor = (props) => {
   return (
     <header>
-      <Button onClick={toggleColorMode}>
-        Toggle {colorMode === "light" ? "Dark" : "Light"}
+      <Button
+        size="small"
+        color={props.color === "light" ? "black" : "white"}
+        onClick={props.toggleColor}
+      >
+        Toggle {props.color === "light" ? "Dark" : "Light"}
       </Button>
     </header>
   );
-}
+};
 
 export default ToggleColor;
