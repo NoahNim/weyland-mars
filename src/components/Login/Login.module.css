@@ -17,10 +17,6 @@
   border-radius: 6px;
 }
 
-body {
-  background-color: black;
-}
-
 .login-button {
   margin-bottom: 20px;
   background-color: rgb(241, 218, 189);
