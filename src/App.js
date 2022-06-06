@@ -1,11 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { users, files, important, messages, logs } from "./Data";
+import { Routes, Route } from "react-router-dom";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
     <div className="App">
-      <h1>{users[0].name}</h1>
+      <Routes>
+        <Route path="/" element={<Login user={users} />} />
+      </Routes>
     </div>
   );
 }
