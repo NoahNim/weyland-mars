@@ -1,5 +1,5 @@
 import ToggleColor from "../ToggleColorButton/ToggleColor";
-import { GridItem, Grid, Center } from "@chakra-ui/react";
+import { GridItem, Center } from "@chakra-ui/react";
 
 const Header = (props) => {
   return (

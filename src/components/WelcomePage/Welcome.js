@@ -1,5 +1,6 @@
 import { Grid, GridItem, Box } from "@chakra-ui/react";
 import Header from "../Header/Header";
+import Information from "../Information/Information";
 
 const Welcome = (props) => {
   return (
@@ -31,7 +32,7 @@ const Welcome = (props) => {
               : "rgb(124, 156, 55)"
           }
           area={"nav"}
-        />
+        ></GridItem>
         <GridItem
           pl="2"
           w="99%"
@@ -42,7 +43,12 @@ const Welcome = (props) => {
               : "rgb(124, 156, 55)"
           }
           area={"main"}
-        />
+        >
+          <Information
+            important={props.important}
+            colorMode={props.colorMode}
+          />
+        </GridItem>
       </Grid>
     </Box>
   );

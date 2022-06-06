@@ -16,7 +16,10 @@ function App() {
           path="welcome-page"
           element={
             <Welcome
-              newsfeed={important}
+              important={important}
+              files={files}
+              messages={messages}
+              logs={logs}
               colorMode={colorMode}
               toggleColorMode={toggleColorMode}
             />

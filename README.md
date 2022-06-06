@@ -64,6 +64,7 @@ content: text
 
 Will have key value pairs of:
 date: time
+type: text
 from: userId
 title: text
 content: text

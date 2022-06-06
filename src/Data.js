@@ -1,7 +1,7 @@
 let users = [{ id: 1, name: "Keiser Fermente", password: "123456" }];
 let files = [
   {
-    createDateate: new Date(2415, 3, 9),
+    createDate: new Date(2415, 3, 9),
     creator: 1,
     fileName: "Main",
     subFolders: [],
@@ -11,8 +11,19 @@ let files = [
 ];
 let important = [
   {
-    currentDate: new Date(2415, 4, 5),
+    id: 1,
+    date: new Date(2415, 6, 6),
+    type: "news",
     from: "Amelie Armiger",
+    title: `Placeholder ${this.currentDate}`,
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu magna non, tristique congue ante. ",
+  },
+  {
+    id: 2,
+    date: new Date(2415, 6, 5),
+    type: "bulletin",
+    from: "Security Chief Ted Parkson",
     title: `Placeholder ${this.currentDate}`,
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu magna non, tristique congue ante. ",
