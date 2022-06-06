@@ -1,16 +1,16 @@
-import { Button } from "@chakra-ui/react";
+import { Button, useColorMode } from "@chakra-ui/react";
 
 const ToggleColor = (props) => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
-    <header>
-      <Button
-        size="small"
-        color={props.color === "light" ? "black" : "white"}
-        onClick={props.toggleColor}
-      >
-        Toggle {props.color === "light" ? "Dark" : "Light"}
-      </Button>
-    </header>
+    <Button
+      size="small"
+      color={colorMode === "light" ? "black" : "white"}
+      onClick={props.toggleColorMode}
+    >
+      Toggle {colorMode === "light" ? "Dark" : "Light"}
+    </Button>
   );
 };
 

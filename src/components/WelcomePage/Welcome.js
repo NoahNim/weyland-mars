@@ -1,4 +1,5 @@
 import { Grid, GridItem, Box } from "@chakra-ui/react";
+import Header from "../Header/Header";
 
 const Welcome = (props) => {
   return (
@@ -16,12 +17,18 @@ const Welcome = (props) => {
         margin="0 auto"
         w="99%"
       >
+        <Header
+          colorMode={props.colorMode}
+          toggleColorMode={props.toggleColorMode}
+        />
         <GridItem
           pl="2"
           w="95%"
           h="100%"
           bg={
-            props.color === "light" ? "rgb(210, 219, 144)" : "rgb(124, 156, 55)"
+            props.colorMode === "light"
+              ? "rgb(210, 219, 144)"
+              : "rgb(124, 156, 55)"
           }
           area={"nav"}
         />
@@ -30,7 +37,9 @@ const Welcome = (props) => {
           w="99%"
           h="100%"
           bg={
-            props.color === "light" ? "rgb(210, 219, 144)" : "rgb(124, 156, 55)"
+            props.colorMode === "light"
+              ? "rgb(210, 219, 144)"
+              : "rgb(124, 156, 55)"
           }
           area={"main"}
         />
