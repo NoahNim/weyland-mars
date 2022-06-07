@@ -21,7 +21,7 @@ const Information = (props) => {
         type={info.type}
         from={info.from}
         title={info.title}
-        content={info.title}
+        content={info.content}
       />
     </Center>
   ));
@@ -33,7 +33,7 @@ const Information = (props) => {
         type={info.type}
         from={info.from}
         title={info.title}
-        content={info.title}
+        content={info.content}
       />
     </Center>
   ));
@@ -44,11 +44,26 @@ const Information = (props) => {
 
   return (
     <Center>
-      <HStack spacing="950px">
-        <Box bg={props.colorMode === "light" ? "white" : "black"}>
+      <HStack spacing="200px">
+        <Box
+          bg={
+            props.colorMode === "light"
+              ? "rgb(150, 219, 236)"
+              : "rgb(83, 79, 192)"
+          }
+        >
           {theNews ? theNews : ""}
         </Box>
-        <Box bg={props.colorMode === "light" ? "white" : "black"}>
+        <Box
+          bg={
+            props.colorMode === "light"
+              ? "rgb(150, 219, 236)"
+              : "rgb(83, 79, 192)"
+          }
+          borderRadius="6px"
+          h="800px"
+          w="500px"
+        >
           {daysBulletins ? theBulletin : ""}
         </Box>
       </HStack>

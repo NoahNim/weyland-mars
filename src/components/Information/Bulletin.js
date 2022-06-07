@@ -1,12 +1,16 @@
-import { List, ListItem } from "@chakra-ui/react";
+import { List, ListItem, Box } from "@chakra-ui/react";
 import InformationDate from "./InformationDate";
 
 const Bulletin = (props) => {
   return (
-    <List>
-      <InformationDate date={props.date} />
-      <ListItem>{props.from}</ListItem>
-    </List>
+    <Box>
+      <List>
+        <InformationDate date={props.date} />
+        <ListItem>{props.from}</ListItem>
+        <ListItem>{props.title}</ListItem>
+        <ListItem>{props.content}</ListItem>
+      </List>
+    </Box>
   );
 };
 
