@@ -29,7 +29,7 @@ let important = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu magna non, tristique congue ante. ",
   },
   {
-    id: 2,
+    id: 3,
     date: new Date(2415, 6, 4),
     type: "bulletin",
     from: "Security Chief Ted Parkson",

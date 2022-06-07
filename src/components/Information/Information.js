@@ -1,47 +1,51 @@
 import { Center, Divider, Box, HStack } from "@chakra-ui/react";
-import { useState } from "react";
+import { useMemo } from "react";
 import News from "./News";
 import Bulletin from "./Bulletin";
 
 const Information = (props) => {
-  const [daysNews, setDaysNews] = useState(
-    props.important.filter((infoType) => infoType.type === "news")
-  );
-  const [daysBulletins, setDaysBulletins] = useState(
-    props.important.filter((infoType) => infoType.type === "bulletin")
-  );
+  const daysNews = useMemo(() => {
+    let info = props.important.filter((infoType) =>
+      infoType.type === "news" ? props.important : ""
+    );
 
-  let theBulletin = daysBulletins.map((info) => (
-    <Center key={info.id}>
-      <Bulletin
-        date={info.date}
-        type={info.type}
-        from={info.from}
-        title={info.title}
-        content={info.content}
-      />
-    </Center>
-  ));
+    if (info) {
+      return info.map((news) => (
+        <Center key={news.id}>
+          <News
+            date={news.date}
+            type={news.type}
+            from={news.from}
+            title={news.title}
+            content={news.content}
+          />
+        </Center>
+      ));
+    }
+  }, [props.important]);
+  const daysBulletins = useMemo(() => {
+    let info = props.important.filter((infoType) =>
+      infoType.type === "bulletin" ? props.important : ""
+    );
 
-  let theNews = daysNews.map((info) => (
-    <Center key={info.id}>
-      <News
-        date={info.date}
-        type={info.type}
-        from={info.from}
-        title={info.title}
-        content={info.content}
-      />
-    </Center>
-  ));
-
-  const todaysInfo = props.important.filter((infoType) =>
-    infoType.type === daysNews.type ? daysNews : daysBulletins
-  );
+    if (info) {
+      return info.map((news) => (
+        <Center key={news.id}>
+          <Bulletin
+            date={news.date}
+            type={news.type}
+            from={news.from}
+            title={news.title}
+            content={news.content}
+          />
+        </Center>
+      ));
+    }
+  }, [props.important]);
 
   return (
     <Center>
-      <HStack spacing="200px">
+      <HStack spacing="15px" margin="20px">
         <Box
           bg={
             props.colorMode === "light"
@@ -49,10 +53,12 @@ const Information = (props) => {
               : "rgb(83, 79, 192)"
           }
           borderRadius="6px"
-          h="800px"
-          w="500px"
+          h="810px"
+          w="850px"
         >
-          {theNews ? theNews : ""}
+          News
+          {/* {theNews ? theNews : ""} */}
+          {daysNews ? daysNews : ""}
         </Box>
         <Box
           bg={
@@ -61,10 +67,12 @@ const Information = (props) => {
               : "rgb(83, 79, 192)"
           }
           borderRadius="6px"
-          h="800px"
-          w="500px"
+          h="810px"
+          w="835px"
         >
-          {daysBulletins ? theBulletin : ""}
+          Bulletin
+          {/* {daysBulletins ? theBulletin : ""} */}
+          {daysBulletins ? daysBulletins : ""}
         </Box>
       </HStack>
     </Center>
