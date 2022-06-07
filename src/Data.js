@@ -17,7 +17,7 @@ let important = [
     from: "Amelie Armiger",
     title: `Placeholder`,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu magna non, tristique congue ante. ",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu magna non, tristique congue ante. em ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu mag em ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu mag em ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu mag em ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu mag ",
   },
   {
     id: 2,
@@ -26,10 +26,10 @@ let important = [
     from: "Security Chief Ted Parkson",
     title: `Placeholder`,
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu magna non, tristique congue ante. ",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum em ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu magem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu magem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu magvitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu magna non, tristique congue ante. ",
   },
   {
-    id: 3,
+    id: 2,
     date: new Date(2415, 6, 4),
     type: "bulletin",
     from: "Security Chief Ted Parkson",

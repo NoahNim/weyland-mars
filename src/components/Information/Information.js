@@ -4,44 +4,50 @@ import News from "./News";
 import Bulletin from "./Bulletin";
 
 const Information = (props) => {
-  const daysNews = useMemo(() => {
-    let info = props.important.filter((infoType) =>
-      infoType.type === "news" ? props.important : ""
-    );
+  const daysNews = useMemo(
+    (info) => {
+      info = props.important.filter((infoType) =>
+        infoType.type === "news" ? props.important : ""
+      );
 
-    if (info) {
-      return info.map((news) => (
-        <Center key={news.id}>
-          <News
-            date={news.date}
-            type={news.type}
-            from={news.from}
-            title={news.title}
-            content={news.content}
-          />
-        </Center>
-      ));
-    }
-  }, [props.important]);
-  const daysBulletins = useMemo(() => {
-    let info = props.important.filter((infoType) =>
-      infoType.type === "bulletin" ? props.important : ""
-    );
+      if (info) {
+        return info.map((news) => (
+          <Center key={news.id}>
+            <News
+              date={news.date}
+              type={news.type}
+              from={news.from}
+              title={news.title}
+              content={news.content}
+            />
+          </Center>
+        ));
+      }
+    },
+    [props.important]
+  );
+  const daysBulletins = useMemo(
+    (info) => {
+      info = props.important.filter((infoType) =>
+        infoType.type === "bulletin" ? props.important : ""
+      );
 
-    if (info) {
-      return info.map((news) => (
-        <Center key={news.id}>
-          <Bulletin
-            date={news.date}
-            type={news.type}
-            from={news.from}
-            title={news.title}
-            content={news.content}
-          />
-        </Center>
-      ));
-    }
-  }, [props.important]);
+      if (info) {
+        return info.map((news) => (
+          <Center key={news.id}>
+            <Bulletin
+              date={news.date}
+              type={news.type}
+              from={news.from}
+              title={news.title}
+              content={news.content}
+            />
+          </Center>
+        ));
+      }
+    },
+    [props.important]
+  );
 
   return (
     <Center>
