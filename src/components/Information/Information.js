@@ -57,7 +57,6 @@ const Information = (props) => {
           w="850px"
         >
           News
-          {/* {theNews ? theNews : ""} */}
           {daysNews ? daysNews : ""}
         </Box>
         <Box
@@ -71,7 +70,6 @@ const Information = (props) => {
           w="835px"
         >
           Bulletin
-          {/* {daysBulletins ? theBulletin : ""} */}
           {daysBulletins ? daysBulletins : ""}
         </Box>
       </HStack>
