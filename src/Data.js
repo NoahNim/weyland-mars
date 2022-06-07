@@ -15,7 +15,7 @@ let important = [
     date: new Date(2415, 6, 6),
     type: "news",
     from: "Amelie Armiger",
-    title: `Placeholder ${this.currentDate}`,
+    title: `Placeholder`,
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ipsum vitae dui mattis varius. Fusce et sem vitae metus lacinia rutrum. Donec tellus nunc, feugiat eu magna non, tristique congue ante. ",
   },

@@ -48,6 +48,9 @@ const Information = (props) => {
               ? "rgb(150, 219, 236)"
               : "rgb(83, 79, 192)"
           }
+          borderRadius="6px"
+          h="800px"
+          w="500px"
         >
           {theNews ? theNews : ""}
         </Box>
