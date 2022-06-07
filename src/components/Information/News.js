@@ -7,6 +7,9 @@ const News = (props) => {
       <List>
         <InformationDate date={props.date} />
         <ListItem>{props.from}</ListItem>
+        <ListItem>{props.from}</ListItem>
+        <ListItem>{props.title}</ListItem>
+        <ListItem>{props.content}</ListItem>
       </List>
     </Box>
   );

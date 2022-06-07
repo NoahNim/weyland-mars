@@ -11,9 +11,6 @@ const Information = (props) => {
     props.important.filter((infoType) => infoType.type === "bulletin")
   );
 
-  console.log(daysBulletins);
-  console.log(daysNews);
-
   let theBulletin = daysBulletins.map((info) => (
     <Center key={info.id}>
       <Bulletin
