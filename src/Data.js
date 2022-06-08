@@ -43,6 +43,7 @@ let messages = [
   {
     sentDate: new Date(2515, 3, 9),
     from: "Adin Vicharky",
+    to: "Kaiser Fermente",
     title: "Welcome to the Lab",
     message: "Lorem ipsum",
   },

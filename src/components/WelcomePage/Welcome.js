@@ -1,6 +1,7 @@
 import { Grid, GridItem, Box } from "@chakra-ui/react";
 import Header from "../Header/Header";
 import Information from "../Information/Information";
+import Messages from "../Messages/Messages";
 
 const Welcome = (props) => {
   return (
@@ -33,7 +34,9 @@ const Welcome = (props) => {
           }
           area={"nav"}
         >
-          <Box>Messages</Box>
+          <Box>
+            <Messages messages={props.messages} />
+          </Box>
           <Box>Files</Box>
           <Box>Logs</Box>
         </GridItem>
