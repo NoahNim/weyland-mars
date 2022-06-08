@@ -1,7 +1,6 @@
 import {
   Drawer,
   DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
@@ -32,7 +31,7 @@ const Messages = (props) => {
           <DrawerCloseButton />
           <DrawerHeader>Here are your messages</DrawerHeader>
           <DrawerBody>
-            <MessageList />
+            <MessageList messages={props.messages} />
           </DrawerBody>
         </DrawerContent>
       </Drawer>
