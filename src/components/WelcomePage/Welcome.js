@@ -24,7 +24,7 @@ const Welcome = (props) => {
         />
         <GridItem
           pl="2"
-          w="95%"
+          w="99%"
           h="100%"
           bg={
             props.colorMode === "light"
@@ -32,7 +32,11 @@ const Welcome = (props) => {
               : "rgb(124, 156, 55)"
           }
           area={"nav"}
-        ></GridItem>
+        >
+          <Box>Messages</Box>
+          <Box>Files</Box>
+          <Box>Logs</Box>
+        </GridItem>
         <GridItem
           pl="2"
           w="99%"

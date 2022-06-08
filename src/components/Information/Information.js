@@ -19,12 +19,13 @@ const Information = (props) => {
               from={news.from}
               title={news.title}
               content={news.content}
+              colorMode={props.colorMode}
             />
           </Center>
         ));
       }
     },
-    [props.important]
+    [props.important, props.colorMode]
   );
   const daysBulletins = useMemo(
     (info) => {
@@ -41,12 +42,13 @@ const Information = (props) => {
               from={news.from}
               title={news.title}
               content={news.content}
+              colorMode={props.colorMode}
             />
           </Center>
         ));
       }
     },
-    [props.important]
+    [props.important, props.colorMode]
   );
 
   return (
@@ -75,7 +77,7 @@ const Information = (props) => {
           h="810px"
           w="835px"
         >
-          Bulletin
+          Bulletins
           {daysBulletins ? daysBulletins : ""}
         </Box>
       </HStack>
