@@ -41,10 +41,27 @@ let important = [
 
 let messages = [
   {
+    id: 1,
     sentDate: new Date(2515, 3, 9),
     from: "Adin Vicharky",
     to: "Kaiser Fermente",
     title: "Welcome to the Lab",
+    message: "Lorem ipsum",
+  },
+  {
+    id: 2,
+    sentDate: new Date(2515, 3, 10),
+    from: "Dr. Veronica Alvarez",
+    to: "Dr. Kaiser Fermente",
+    title: "Mental Health of Workers Report",
+    message: "Lorem ipsum",
+  },
+  {
+    id: 3,
+    sentDate: new Date(2515, 4, 5),
+    from: "Dr. Chazz McFazzer",
+    to: "Kaiser Fermente",
+    title: "Effects from the Artifact",
     message: "Lorem ipsum",
   },
 ];
