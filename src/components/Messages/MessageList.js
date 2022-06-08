@@ -5,14 +5,13 @@ import Message from "./Message";
 const MessageList = (props) => {
   return (
     <Box>
-      {props.messages.map((message) => (
-        <List>
-          <ListItem>{message.title}</ListItem>
-          <ListItem>
-            <Message />
+      <List>
+        {props.messages.map((message) => (
+          <ListItem margin="8px">
+            <Message key={message.id} message={message} />
           </ListItem>
-        </List>
-      ))}
+        ))}
+      </List>
     </Box>
   );
 };
