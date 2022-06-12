@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import Message from "./Message";
 
 const MessageList = (props) => {
+  const [messages, setMessages] = useState(props.messages);
+
   return (
     <Box>
       <List>
-        {props.messages.map((message) => (
-          <ListItem margin="8px">
-            <Message key={message.id} message={message} />
+        {messages.map((message) => (
+          <ListItem key={message.id} margin="8px">
+            <Message message={message} />
           </ListItem>
         ))}
       </List>

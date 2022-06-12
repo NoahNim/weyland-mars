@@ -35,7 +35,11 @@ const Welcome = (props) => {
           area={"nav"}
         >
           <Box>
-            <Messages messages={props.messages} />
+            <Messages
+              messages={props.messages}
+              user={props.user}
+              addMessages={props.addMessages}
+            />
           </Box>
           <Box>Files</Box>
           <Box>Logs</Box>

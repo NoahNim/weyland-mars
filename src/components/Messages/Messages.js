@@ -2,6 +2,7 @@ import {
   Drawer,
   DrawerBody,
   DrawerHeader,
+  DrawerFooter,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
@@ -10,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import MessageList from "./MessageList";
+import CreateMessage from "./CreateMessage";
 
 const Messages = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -31,8 +33,14 @@ const Messages = (props) => {
           <DrawerCloseButton />
           <DrawerHeader>Here are your messages</DrawerHeader>
           <DrawerBody>
-            <MessageList messages={props.messages} />
+            <MessageList messages={props.messages} user={props.user} />
           </DrawerBody>
+          <DrawerFooter>
+            <CreateMessage
+              messages={props.messages}
+              addMessages={props.addMessages}
+            />
+          </DrawerFooter>
         </DrawerContent>
       </Drawer>
     </>

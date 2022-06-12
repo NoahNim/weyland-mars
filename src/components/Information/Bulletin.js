@@ -2,7 +2,6 @@ import { List, ListItem, Box } from "@chakra-ui/react";
 import InformationDate from "./InformationDate";
 
 const Bulletin = (props) => {
-  console.log(`In BULLETIN ${props.date}`);
   return (
     <Box
       bg={
