@@ -37,9 +37,11 @@ function App() {
   const [messageList, setMessageList] = useState(messages);
 
   const addMessages = (messages) => {
+    console.log("NEW MESSAGES " + messages);
     setMessageList((prevMessages) => {
       return [messages, ...prevMessages];
     });
+    console.log(messageList);
   };
   return (
     <Box>
